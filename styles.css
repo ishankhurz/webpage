@@ -345,6 +345,58 @@ a {
   padding: 1.4rem;
 }
 
+.project-showcase {
+  padding-top: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.project-copy,
+.project-figure {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.project-copy {
+  padding: 1.6rem;
+}
+
+.project-copy p {
+  margin-top: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.project-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.project-figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f3ede4;
+}
+
+.project-figure figcaption {
+  padding: 1rem 1.2rem 1.25rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.96rem;
+}
+
 .timeline {
   display: grid;
   gap: 1rem;
@@ -424,7 +476,8 @@ a {
   .hero,
   .two-column,
   .spotlight,
-  .cards-grid {
+  .cards-grid,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
